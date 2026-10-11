@@ -1,0 +1,9 @@
+<!doctype html><html lang=en><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/style.css"><title>Dashboard – VerifyAI</title></head><body data-page="dashboard"><div class=app><aside id=side data-on="Dashboard"></aside><main class=main><div class=top><button class=ham>☰</button></div>
+<div id=head></div><div class="row r2" style="margin-top:20px"><div class=card id=risk></div><div><div class="row r4" id=metrics></div></div></div>
+<div class=card><h3>Document Comparison</h3><div id=cmp></div></div>
+<div class=card><h3>Risk Indicators</h3><div id=inds></div></div>
+<div class=card><h3>🧠 Verification Summary</h3><div id=sum></div></div>
+<div class=card><h3>Documents</h3><div class=tools><input id=q placeholder="Search documents..."><select id=f><option value="">All statuses</option><option value=ok>Consistent</option><option value=warn>Review</option><option value=bad>Inconsistent</option><option value=na>Not compared</option></select></div><div id=docs></div></div>
+<a class=btn href=report.html>View Report</a></main></div>
+<div class=ov id=modal onclick="if(event.target===this)this.classList.remove('show')"><div class=box id=mb></div></div>
+<script src=js/api.js></script><script src=js/app.js></script><script src=js/dashboard.js></script></body></html>

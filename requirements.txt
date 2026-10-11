@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+google-genai
+rapidfuzz
+python-dotenv
+pydantic
+pytest
+pytesseract
+Pillow
+PyMuPDF
