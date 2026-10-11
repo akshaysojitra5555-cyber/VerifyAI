@@ -1,7 +1,7 @@
 /* Backend API calls. Load this BEFORE app.js. */
 
 // Backend address - defined ONCE here and used everywhere else.
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://verifyai-54se.onrender.com";
 const API_URL = `${API_BASE_URL}/api/compare-documents`;
 
 const API_MAX_FILES = 5;               // backend accepts file1 ... file5
