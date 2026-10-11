@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-CONFIGURED_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+CONFIGURED_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash").strip()
 
 # Ordered model candidates for fallback if configured model returns 404/deprecation
 MODEL_CANDIDATES = list(dict.fromkeys([
