@@ -4,7 +4,7 @@ import os
 import shutil
 from pathlib import Path
 
-import fitz
+import pymupdf
 import pytesseract
 from PIL import Image
 
@@ -37,17 +37,14 @@ def ocr_image(image: Image.Image) -> str:
 
 def ocr_pdf(file_bytes: bytes) -> str:
     """Extract text from every page of a PDF using OCR."""
-    document = fitz.open(
-        stream=file_bytes,
-        filetype="pdf"
-    )
+    document = pymupdf.open(stream=file_bytes, filetype="pdf")
 
     try:
         all_text = []
 
         for page in document:
             pix = page.get_pixmap(
-                matrix=fitz.Matrix(2, 2)
+                matrix=pymupdf.Matrix(2, 2)
             )
 
             image = Image.open(
