@@ -33,7 +33,7 @@ from ocr import extract_text
 from extraction_service import extract_document_fields
 from comparison import compare_all_documents
 from risk_engine import calculate_risk
-
+import time
 from gemini_service import (
     extract_document_with_gemini,
     semantic_compare_documents,
